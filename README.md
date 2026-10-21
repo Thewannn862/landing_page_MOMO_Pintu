@@ -162,7 +162,7 @@ Pendekatan ini menjaga halaman tetap berbasis Astro tanpa menjadikan seluruh web
 Clone repository:
 
 ```bash
-git clone <URL-REPOSITORY-GITHUB>
+git clone https://github.com/Thewannn862/landing_page_MOMO_Pintu.git
 cd landing-page
 ```
 
