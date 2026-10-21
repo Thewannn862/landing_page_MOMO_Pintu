@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  --color-momo-red: #D91A2A;
+  --color-momo-darkred: #BE1422;
+  --color-momo-softred: #FAF1F2;
+  --color-momo-yellow: #F5C400;
+  --color-momo-yellowHover: #E5B700;
+  --color-momo-dark: #161616;
+  --color-momo-charcoal: #222222;
+  --color-momo-cream: #FBF9F5;
+  --color-momo-border: #E8E5DF;
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-serif: 'Newsreader', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+@layer utilities {
+  .font-editorial-italic {
+    font-family: 'Newsreader', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .door-shadow {
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.08);
+  }
+  .watermark-m {
+    user-select: none;
+    pointer-events: none;
+    line-height: 0.8;
+  }
+}

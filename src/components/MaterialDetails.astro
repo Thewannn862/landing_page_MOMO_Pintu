@@ -1,0 +1,132 @@
+---
+import { getConsultationUrl } from '../utils/whatsapp';
+
+const specConsultationUrl = getConsultationUrl('spesifikasi material dan detail teknis pintu MOMO');
+---
+
+<section class="py-16 sm:py-20 bg-white" id="material">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Left Graphic Card: MOMO Catalog Cover Illustration with Actual Asset -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="w-full max-w-sm bg-momo-red rounded-xl p-5 sm:p-6 shadow-2xl relative overflow-hidden flex flex-col justify-between text-white border-4 border-zinc-100">
+          <!-- Brand Header on Booklet -->
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <img
+                src="/images/momo/logo/logo-momo-white.png"
+                alt="Logo MOMO"
+                class="h-6 w-auto object-contain"
+                width="78"
+                height="24"
+              />
+            </div>
+            <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/90">
+              PT MOMO DEKORASI RUMAH JAYA
+            </h3>
+            <p class="text-xs text-white/80 font-editorial-italic mt-1.5">
+              Tutup Pintu Hilangkan Kebisingan, Rangkul Ketenangan
+            </p>
+          </div>
+
+          <!-- Catalog Cover Image -->
+          <div class="relative rounded-lg overflow-hidden border border-white/30 my-6 shadow-inner bg-zinc-900 aspect-[4/3]">
+            <img
+              src="/images/momo/catalog/cover-reference.jpg"
+              alt="Sampul resmi katalog MOMO Pintu Kayu"
+              class="w-full h-full object-cover"
+              loading="lazy"
+              width="360"
+              height="270"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-3 right-3 text-white">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-momo-yellow block">
+                KOLEKSI RESMI
+              </span>
+              <p class="text-xs font-bold leading-tight">Keindahan yang punya fungsi.</p>
+            </div>
+          </div>
+
+          <div class="text-[10px] text-white/70 uppercase tracking-widest text-right font-semibold">
+            Katalog Versi Resmi MOMO
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content Column -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="flex items-center gap-2">
+          <div class="w-4 h-0.5 bg-momo-red"></div>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-momo-red">
+            MATERIAL &amp; DETAIL
+          </span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 leading-tight">
+          Lebih dari<br />
+          <span class="font-editorial-italic font-normal">sekadar tampilan.</span>
+        </h2>
+
+        <p class="text-sm text-zinc-600 leading-relaxed">
+          Katalog MOMO menjelaskan beberapa komponen yang digunakan untuk membantu menjaga kualitas dan fungsi pintu:
+        </p>
+
+        <!-- Feature Bullets with Red Square Dots -->
+        <div class="space-y-4 pt-2">
+          <div class="flex items-start gap-3">
+            <div class="w-2 h-2 rounded-xs bg-momo-red mt-1.5 shrink-0"></div>
+            <div>
+              <h3 class="text-xs sm:text-sm font-bold text-zinc-900">Inti kayu tebal 4,5 cm</h3>
+              <p class="text-xs text-zinc-500 leading-relaxed">
+                Material inti kayu melalui proses modifikasi agar lebih kokoh, kuat, dan membantu meredam suara.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-2 h-2 rounded-xs bg-momo-red mt-1.5 shrink-0"></div>
+            <div>
+              <h3 class="text-xs sm:text-sm font-bold text-zinc-900">HMR &amp; finishing melamin</h3>
+              <p class="text-xs text-zinc-500 leading-relaxed">
+                HMR memberikan ketahanan ekstra terhadap kelembapan; lapisan melamin memberi warna awet teratur.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-2 h-2 rounded-xs bg-momo-red mt-1.5 shrink-0"></div>
+            <div>
+              <h3 class="text-xs sm:text-sm font-bold text-zinc-900">Kusen &amp; soundproof tape</h3>
+              <p class="text-xs text-zinc-500 leading-relaxed">
+                Katalog mencantumkan kusen kompak tebal 4 cm, soundproof tape, dan opsi untuk architrave.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-2 h-2 rounded-xs bg-momo-red mt-1.5 shrink-0"></div>
+            <div>
+              <h3 class="text-xs sm:text-sm font-bold text-zinc-900">Lem polyurethane</h3>
+              <p class="text-xs text-zinc-500 leading-relaxed">
+                Proses perekat yang disebutkan di katalog untuk mendukung kekuatan sambungan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a
+            class="inline-flex items-center gap-1.5 text-xs font-bold text-zinc-800 hover:text-momo-red transition-colors focus:outline-none focus:ring-2 focus:ring-momo-red rounded-sm"
+            href={specConsultationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Tanyakan spesifikasi lengkap</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

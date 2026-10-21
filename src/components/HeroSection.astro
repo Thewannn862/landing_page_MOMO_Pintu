@@ -1,0 +1,102 @@
+---
+import { getConsultationUrl } from '../utils/whatsapp';
+
+const whatsappUrl = getConsultationUrl('kebutuhan pintu interior');
+---
+
+<section class="relative bg-momo-red text-white overflow-hidden pt-12 pb-16 lg:py-20">
+  <!-- Huge background stylistic typographic watermark -->
+  <div class="absolute -right-12 -bottom-28 text-[320px] font-black text-white/[0.06] select-none pointer-events-none font-sans watermark-m">
+    M
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <!-- Left Hero Copy -->
+      <div class="lg:col-span-7 space-y-7">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-[11px] font-semibold tracking-widest uppercase text-white/90">
+          <span class="w-1.5 h-1.5 rounded-full bg-momo-yellow"></span>
+          MOMO PINTU KAYU
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-[58px] leading-[1.08] font-bold tracking-tight text-white max-w-xl">
+          Ruang nyaman,<br />
+          dimulai dari<br />
+          <span class="font-editorial-italic font-normal tracking-normal">sebuah pintu.</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-white/85 font-normal leading-relaxed max-w-lg">
+          Perpaduan desain, detail material, dan pilihan finishing untuk melengkapi rumah dengan karakter yang tepat.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a
+            class="inline-flex items-center gap-3 bg-momo-yellow hover:bg-momo-yellowHover text-zinc-900 font-bold px-7 py-3.5 rounded-full text-xs uppercase tracking-wider transition-all shadow-lg shadow-black/10 focus:outline-none focus:ring-2 focus:ring-white"
+            href="#koleksi"
+          >
+            <span>Jelajahi koleksi</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a
+            class="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider font-semibold text-white/90 hover:text-white px-4 py-3 underline underline-offset-4 decoration-white/40 hover:decoration-white transition-all focus:outline-none focus:ring-2 focus:ring-white rounded-lg"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Diskusikan kebutuhan →
+          </a>
+        </div>
+
+        <div class="pt-8 flex items-center gap-3 border-t border-white/15 text-white/80 text-xs">
+          <div class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center font-bold text-xs bg-white/10 shrink-0">
+            M
+          </div>
+          <div>
+            <p class="font-bold text-white tracking-wide">PT MOMO Dekorasi Rumah Jaya</p>
+            <p class="text-white/70 text-[11px]">Pintu kayu solid ramah dan rapi yang awet dipakai.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Hero Arched Product Graphic -->
+      <div class="lg:col-span-5 relative flex justify-center">
+        <!-- Arched Image Container -->
+        <div class="relative w-full max-w-[370px] bg-zinc-100 rounded-t-[180px] rounded-b-2xl p-3 shadow-2xl border-4 border-white/20">
+          <!-- Round Badge Stamp -->
+          <div class="absolute -top-3 -left-3 z-20 w-16 h-16 rounded-full bg-momo-yellow text-zinc-900 font-extrabold flex flex-col items-center justify-center shadow-lg border-2 border-white leading-none">
+            <span class="text-[9px] uppercase tracking-tighter">EST. 2020</span>
+            <span class="text-xl font-black">M</span>
+            <span class="text-[8px] uppercase tracking-widest font-semibold">MOMO</span>
+          </div>
+
+          <!-- Real Door Showcase Graphic (from ZIP assets) -->
+          <div class="w-full h-[470px] rounded-t-[170px] rounded-b-xl overflow-hidden relative bg-stone-200">
+            <img
+              src="/images/momo/hero/interior-door-hero.jpg"
+              alt="Interior pintu kayu MOMO tipe residensial terpasang di ruang modern"
+              class="w-full h-full object-cover"
+              width="370"
+              height="470"
+              fetchpriority="high"
+            />
+
+            <!-- Warm Glow Bottom Overlay -->
+            <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 text-center">
+              <span class="text-[9px] uppercase tracking-widest text-momo-yellow font-bold block mb-0.5">
+                TIPE RESIDENSIAL
+              </span>
+              <p class="text-sm font-medium tracking-tight text-white drop-shadow">
+                Desain yang terasa seperti rumah.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slanted Accent Stripe -->
+  <div class="absolute -bottom-4 left-0 right-0 h-8 bg-momo-yellow -rotate-1 origin-bottom-left transform translate-y-3 pointer-events-none"></div>
+</section>

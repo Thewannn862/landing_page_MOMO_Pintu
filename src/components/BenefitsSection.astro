@@ -1,0 +1,131 @@
+---
+import { getConsultationUrl } from '../utils/whatsapp';
+
+const consultationUrl = getConsultationUrl('keunggulan dan detail pintu MOMO');
+
+const benefits = [
+  {
+    number: '01',
+    title: 'Desain yang indah',
+    desc: 'Pilihan tampilan pintu untuk melengkapi karakter ruang, dari modern hingga klasik.'
+  },
+  {
+    number: '02',
+    title: 'Membantu meredam suara',
+    desc: 'Ketebalan inti 4,5 cm membantu meredam suara bising agar aktivitas dalam ruangan tetap tenang.'
+  },
+  {
+    number: '03',
+    title: 'Dirancang untuk pemakaian jangka panjang',
+    desc: 'Material inti presisi memberi stabilitas dan peredaman konsisten seiring tahun.'
+  },
+  {
+    number: '04',
+    title: 'Perhatian pada kelembapan',
+    desc: 'Pilihan material HMR disiapkan untuk mengantisipasi kondisi yang lembap.'
+  },
+  {
+    number: '05',
+    title: 'Pilihan yang lebih bertanggung jawab',
+    desc: 'MOMO terus berikhtiar komitmen pada standardisasi proses yang ramah lingkungan.'
+  }
+];
+---
+
+<section class="relative bg-momo-red text-white py-16 sm:py-20 overflow-hidden" id="keunggulan">
+  <!-- Big Stylistic Letter M Watermark on Right -->
+  <div class="absolute right-4 top-1/2 -translate-y-1/2 text-[450px] font-black text-black/[0.07] select-none pointer-events-none watermark-m">
+    M
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <!-- Left Column -->
+      <div class="lg:col-span-5 space-y-6">
+        <div class="flex items-center gap-2">
+          <div class="w-4 h-0.5 bg-white"></div>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-white/90">WHY MOMO</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">
+          Detail kecil.<br />
+          <span class="font-editorial-italic font-normal">Perbedaan besar.</span>
+        </h2>
+
+        <p class="text-sm text-white/85 leading-relaxed">
+          Setiap elemen punya peran, mulai dari kerapian hingga material pendukung. Berikut beberapa hal yang dirangkum dalam katalog MOMO.
+        </p>
+
+        <a
+          class="inline-flex items-center gap-3 bg-momo-yellow hover:bg-momo-yellowHover text-zinc-900 font-bold px-6 py-3 rounded-full text-xs uppercase tracking-wider transition-all shadow-md focus:outline-none focus:ring-2 focus:ring-white"
+          href={consultationUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Tanya detail produk</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+
+        <!-- White Feature Highlights Badge Box -->
+        <div class="bg-white rounded-xl p-5 text-zinc-800 shadow-xl mt-8">
+          <span class="text-[10px] font-extrabold tracking-widest uppercase text-zinc-400 block mb-3 text-center sm:text-left">
+            KEUNGGULAN PINTU KAMI
+          </span>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="p-2 border border-zinc-100 rounded-lg">
+              <div class="text-momo-red mb-1 flex justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text-[10px] font-bold text-zinc-800 block">Redam Suara</span>
+            </div>
+
+            <div class="p-2 border border-zinc-100 rounded-lg">
+              <div class="text-momo-red mb-1 flex justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text-[10px] font-bold text-zinc-800 block">Tahan Lembap</span>
+            </div>
+
+            <div class="p-2 border border-zinc-100 rounded-lg">
+              <div class="text-momo-red mb-1 flex justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text-[10px] font-bold text-zinc-800 block">Finishing Rapi</span>
+            </div>
+
+            <div class="p-2 border border-zinc-100 rounded-lg">
+              <div class="text-momo-red mb-1 flex justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text-[10px] font-bold text-zinc-800 block">Garansi 3 Thn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: 5 Numbered Items -->
+      <div class="lg:col-span-7 space-y-4">
+        {benefits.map((b) => (
+          <div class="border-b border-white/20 pb-4 flex items-start gap-4">
+            <span class="text-sm font-bold text-white/60 pt-0.5">{b.number}</span>
+            <div class="flex-1">
+              <h3 class="text-base font-bold text-white mb-1">{b.title}</h3>
+              <p class="text-xs text-white/80 leading-relaxed">{b.desc}</p>
+            </div>
+            <span class="text-white/40 text-xs mt-1">+</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,198 @@
+// Katalog model pintu diambil dari katalog PDF MOMO.
+// Path gambar diarahkan ke folder public/images/momo/models.
+export type MomoProduct = { code: string; name: string; category: string; image: string };
+
+export const momoProducts: MomoProduct[] = [
+  {
+    "code": "K-001",
+    "name": "Model K-001",
+    "category": "carbon",
+    "image": "/images/momo/models/k-001.png"
+  },
+  {
+    "code": "K-002",
+    "name": "Model K-002",
+    "category": "carbon",
+    "image": "/images/momo/models/k-002.png"
+  },
+  {
+    "code": "K-006",
+    "name": "Model K-006",
+    "category": "carbon",
+    "image": "/images/momo/models/k-006.png"
+  },
+  {
+    "code": "K-014",
+    "name": "Model K-014",
+    "category": "carbon",
+    "image": "/images/momo/models/k-014.png"
+  },
+  {
+    "code": "K-011",
+    "name": "Model K-011",
+    "category": "carbon",
+    "image": "/images/momo/models/k-011.png"
+  },
+  {
+    "code": "K-012",
+    "name": "Model K-012",
+    "category": "carbon",
+    "image": "/images/momo/models/k-012.png"
+  },
+  {
+    "code": "K-017",
+    "name": "Model K-017",
+    "category": "carbon",
+    "image": "/images/momo/models/k-017.png"
+  },
+  {
+    "code": "K-016",
+    "name": "Model K-016",
+    "category": "carbon",
+    "image": "/images/momo/models/k-016.png"
+  },
+  {
+    "code": "K-009",
+    "name": "Model K-009",
+    "category": "carbon",
+    "image": "/images/momo/models/k-009.png"
+  },
+  {
+    "code": "K-019",
+    "name": "Model K-019",
+    "category": "carbon",
+    "image": "/images/momo/models/k-019.png"
+  },
+  {
+    "code": "K-020",
+    "name": "Model K-020",
+    "category": "carbon",
+    "image": "/images/momo/models/k-020.png"
+  },
+  {
+    "code": "K-007",
+    "name": "Model K-007",
+    "category": "carbon",
+    "image": "/images/momo/models/k-007.png"
+  },
+  {
+    "code": "K-024",
+    "name": "Model K-024",
+    "category": "carbon",
+    "image": "/images/momo/models/k-024.png"
+  },
+  {
+    "code": "K-025",
+    "name": "Model K-025",
+    "category": "carbon",
+    "image": "/images/momo/models/k-025.png"
+  },
+  {
+    "code": "K-026",
+    "name": "Model K-026",
+    "category": "carbon",
+    "image": "/images/momo/models/k-026.png"
+  },
+  {
+    "code": "K-027",
+    "name": "Model K-027",
+    "category": "carbon",
+    "image": "/images/momo/models/k-027.png"
+  },
+  {
+    "code": "K-028",
+    "name": "Model K-028",
+    "category": "carbon",
+    "image": "/images/momo/models/k-028.png"
+  },
+  {
+    "code": "K-029",
+    "name": "Model K-029",
+    "category": "carbon",
+    "image": "/images/momo/models/k-029.png"
+  },
+  {
+    "code": "R-002",
+    "name": "Model R-002",
+    "category": "panel",
+    "image": "/images/momo/models/r-002.png"
+  },
+  {
+    "code": "R-004",
+    "name": "Model R-004",
+    "category": "panel",
+    "image": "/images/momo/models/r-004.png"
+  },
+  {
+    "code": "R-005",
+    "name": "Model R-005",
+    "category": "panel",
+    "image": "/images/momo/models/r-005.png"
+  },
+  {
+    "code": "HE-016",
+    "name": "Model HE-016",
+    "category": "classic",
+    "image": "/images/momo/models/he-016.png"
+  },
+  {
+    "code": "Z-002",
+    "name": "Model Z-002",
+    "category": "classic",
+    "image": "/images/momo/models/z-002.png"
+  },
+  {
+    "code": "Z-004",
+    "name": "Model Z-004",
+    "category": "classic",
+    "image": "/images/momo/models/z-004.png"
+  },
+  {
+    "code": "R-025",
+    "name": "Model R-025 (varian cokelat)",
+    "category": "panel",
+    "image": "/images/momo/models/r-025.png"
+  },
+  {
+    "code": "R-001",
+    "name": "Model R-001",
+    "category": "panel",
+    "image": "/images/momo/models/r-001.png"
+  },
+  {
+    "code": "FG-003",
+    "name": "Model FG-003",
+    "category": "classic",
+    "image": "/images/momo/models/fg-003.png"
+  },
+  {
+    "code": "E-014",
+    "name": "Model E-014",
+    "category": "classic",
+    "image": "/images/momo/models/e-014.png"
+  },
+  {
+    "code": "R-025",
+    "name": "Model R-025 (varian putih)",
+    "category": "panel",
+    "image": "/images/momo/models/r-025-white.png"
+  },
+  {
+    "code": "Z-005",
+    "name": "Model Z-005",
+    "category": "classic",
+    "image": "/images/momo/models/z-005.png"
+  },
+  {
+    "code": "Z-016",
+    "name": "Model Z-016",
+    "category": "classic",
+    "image": "/images/momo/models/z-016.png"
+  },
+  {
+    "code": "Z-022",
+    "name": "Model Z-022",
+    "category": "classic",
+    "image": "/images/momo/models/z-022.png"
+  }
+];

@@ -1,0 +1,97 @@
+---
+import { getWhatsAppUrl, MOMO_DISPLAY_PHONE } from '../utils/whatsapp';
+
+const currentYear = new Date().getFullYear();
+const whatsappUrl = getWhatsAppUrl('Halo MOMO Pintu Kayu, saya ingin bertanya lebih lanjut mengenai produk dan pemesanan.');
+---
+
+<footer class="bg-momo-dark text-zinc-400 pt-16 pb-12 border-t border-zinc-800 text-xs" id="kontak">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-zinc-800" id="tentang">
+      <!-- Col 1: Brand & Imprint -->
+      <div class="md:col-span-5 space-y-4">
+        <a href="#" class="inline-block" aria-label="MOMO Pintu Kayu">
+          <img
+            src="/images/momo/logo/logo-momo-white.png"
+            alt="MOMO Pintu Kayu"
+            class="h-8 w-auto object-contain"
+            width="100"
+            height="32"
+          />
+        </a>
+        <p class="text-zinc-300 font-editorial-italic text-sm">
+          Tutup Pintu Hilangkan Kebisingan, Rangkul Ketenangan.
+        </p>
+        <div class="pt-2 text-zinc-500 text-[11px] leading-relaxed">
+          <span class="font-bold text-zinc-400 uppercase tracking-wider block">
+            PT MOMO DEKORASI RUMAH JAYA
+          </span>
+          Produsen pintu interior kayu solid presisi dengan standar modern.
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div class="md:col-span-3 space-y-3">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-white block">
+          JELAJAHI
+        </span>
+        <ul class="space-y-2 text-zinc-400">
+          <li>
+            <a class="hover:text-white transition-colors" href="#koleksi">Koleksi Pintu</a>
+          </li>
+          <li>
+            <a class="hover:text-white transition-colors" href="#finishing">Pilihan Finishing</a>
+          </li>
+          <li>
+            <a class="hover:text-white transition-colors" href="#keunggulan">Keunggulan</a>
+          </li>
+          <li>
+            <a class="hover:text-white transition-colors" href="#material">Material &amp; Detail</a>
+          </li>
+          <li>
+            <a class="hover:text-white transition-colors" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Direct Contact -->
+      <div class="md:col-span-4 space-y-3">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-white block">
+          HUBUNGI KAMI
+        </span>
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-base font-bold text-white hover:text-momo-yellow transition-colors inline-block"
+        >
+          {MOMO_DISPLAY_PHONE} →
+        </a>
+        <p class="text-zinc-500 text-[11px] leading-relaxed">
+          Jalan Industri Raya Barat Blok J4-27,<br />
+          Kawasan LIK, Genuk,<br />
+          Kota Semarang, Jawa Tengah 50111
+        </p>
+        <div class="pt-2">
+          <a
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white text-[11px] transition-colors focus:outline-none focus:ring-2 focus:ring-momo-yellow"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Mulai Konsultasi</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright Bottom Bar -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-500">
+      <p>© {currentYear} PT MOMO Dekorasi Rumah Jaya. Hak cipta dilindungi undang-undang.</p>
+      <a href="#" class="hover:text-zinc-300 transition-colors">
+        Kembali ke atas ↑
+      </a>
+    </div>
+  </div>
+</footer>

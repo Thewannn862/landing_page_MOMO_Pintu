@@ -1,28 +1,62 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import Layout from '../layouts/Layout.astro';
+import TopAnnouncement from '../components/TopAnnouncement.astro';
+import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection.astro';
+import FactStrip from '../components/FactStrip.astro';
+import ProductCatalog from '../components/ProductCatalog';
+import FinishingPalette from '../components/FinishingPalette.astro';
+import BenefitsSection from '../components/BenefitsSection.astro';
+import MaterialDetails from '../components/MaterialDetails.astro';
+import ConsultationSteps from '../components/ConsultationSteps.astro';
+import FAQAccordion from '../components/FAQAccordion';
+import ClosingCTA from '../components/ClosingCTA.astro';
+import Footer from '../components/Footer.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<Layout
+  title="MOMO Pintu Kayu - Desain yang Terasa Seperti Rumah | PT MOMO Dekorasi Rumah Jaya"
+  description="Koleksi pintu interior kayu solid presisi MOMO. Inti kayu tebal 4,5 cm, material HMR tahan lembap, ragam finishing melamin rapi, dan garansi resmi 3 tahun."
+>
+  <!-- Top Announcement Bar -->
+  <TopAnnouncement />
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">
-				Markdown is also supported...
-			</a>
-		</div>
-	</body>
-</html>
+  <!-- Sticky Navbar with Mobile Menu -->
+  <Navbar client:load />
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <HeroSection />
+
+    <!-- 4 Key Facts Strip -->
+    <FactStrip />
+
+    <!-- Interactive Product Catalog -->
+    <ProductCatalog client:load />
+
+    <!-- 5 Finishing Swatches Palette -->
+    <FinishingPalette />
+
+    <!-- Why MOMO / Benefits Section -->
+    <BenefitsSection />
+
+    <!-- Technical Material & Detail -->
+    <MaterialDetails />
+
+    <!-- 3 Simple Consultation Steps -->
+    <ConsultationSteps />
+
+    <!-- Interactive FAQ Accordion -->
+    <FAQAccordion client:visible />
+
+    <!-- Closing Call to Action Banner -->
+    <ClosingCTA />
+  </main>
+
+  <!-- Main Footer -->
+  <Footer />
+
+  <!-- Floating WhatsApp CTA -->
+  <FloatingWhatsApp />
+</Layout>
